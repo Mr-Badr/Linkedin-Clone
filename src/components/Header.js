@@ -19,46 +19,48 @@ const Header = (props) => {
         </Search>
         <Nav>
           <NavListWrap>
-            <NavList className="active">
+            <NavList className='active'>
               <a>
-                <img src="/images/nav-home.svg" alt="" />
+                <img src='/images/nav-home.svg' alt='' />
                 <span>Home</span>
               </a>
             </NavList>
 
             <NavList>
               <a>
-                <img src="/images/nav-network.svg" alt="" />
+                <img src='/images/nav-network.svg' alt='' />
                 <span>My Network</span>
               </a>
             </NavList>
 
             <NavList>
               <a>
-                <img src="/images/nav-jobs.svg" alt="" />
+                <img src='/images/nav-jobs.svg' alt='' />
                 <span>Jobs</span>
               </a>
             </NavList>
 
             <NavList>
               <a>
-                <img src="/images/nav-messaging.svg" alt="" />
+                <img src='/images/nav-messaging.svg' alt='' />
                 <span>Messaging</span>
               </a>
             </NavList>
 
             <NavList>
               <a>
-                <img src="/images/nav-notifications.svg" alt="" />
+                <img src='/images/nav-notifications.svg' alt='' />
                 <span>Notifications</span>
               </a>
             </NavList>
 
             <User>
               <a>
-                <img src="/images/user.svg" alt="" />
-                <span>Me</span>
-                <img src="/images/down-icon.svg" alt="" />
+                <img src='/images/user.svg' alt='' />
+                <span>
+                  Me
+                  <img src='/images/down-icon.svg' alt='' />
+                </span>
               </a>
 
               <SignOut>
@@ -68,10 +70,10 @@ const Header = (props) => {
 
             <Work>
               <a>
-                <img src="/images/nav-work.svg" alt="" />
+                <img src='/images/nav-work.svg' alt='' />
                 <span>
                   Work
-                  <img src="/images/down-icon.svg" alt="" />
+                  <img src='/images/down-icon.svg' alt='' />
                 </span>
               </a>
             </Work>
@@ -232,6 +234,10 @@ const User = styled(NavList)`
     width: 24px;
     height: 24px;
     border-radius: 50%;
+  }
+  span > img {
+    margin-left: 1.2px;
+width: 13px;
   }
   span {
     display: flex;
